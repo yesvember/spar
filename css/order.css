@@ -1,0 +1,194 @@
+#content {
+    padding: 250px 20px 100px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+#content .order-title {
+    margin-bottom: 100px;
+}
+#content .order-title h2 {
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 50px;
+}
+#content .order-step ol {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0 50px;
+    font-size: 14px;
+}
+#content .order-step ol li:nth-of-type(n+2){
+    color: #8a8a8a;
+}
+#content ol li::after {
+    content: ">";
+    padding: 0 30px;
+}
+#content ol li:last-of-type::after{
+    content: "";
+    padding: 0;
+}
+#content .order-basket {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    z-index: 1;
+}
+#content .order-basket ul {
+    display: flex;
+}
+#content .order-basket ul li {
+    position: relative;
+    top: 1px;
+    padding: 17px 55px;
+    box-sizing: border-box;  
+    border: 1px solid black;
+    background-color: #fff;
+    cursor: pointer; 
+    z-index: 3;
+}
+#content .pc-basket:nth-of-type(1) a{
+    color: #000000;
+    font-weight: 500;
+}
+#content .pc-basket:nth-of-type(1).on,
+#content .pc-basket:nth-of-type(2).on {
+    border-bottom: 1px solid #fff;
+}
+#content .pc-basket:nth-of-type(1) a.on,
+#content .pc-basket:nth-of-type(2) a.on {
+    color: #000000;
+    font-weight: 500;
+}
+#content .order-basket ul li a {
+    display: block;
+    color: #8a8a8a;
+}
+#content .m-basket {display: none;}
+#content .order-basket ul li:nth-of-type(3) {
+    background-color: #000;
+}
+#content .order-basket ul li:nth-of-type(3) a{
+    font-weight: bold;
+    color: #fffffd;
+}
+#content .order-basket ul li:nth-of-type(4) a{
+    color: #000;
+}
+#content .order-basket span {
+    padding: 17px 20px;
+    box-sizing: border-box; 
+    color: #909090;
+}
+#content .order-basket-empty {
+    width: 100%;
+    height: 230px;
+    padding: 54px 0 64px 0;
+    box-sizing: border-box;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #e6e6e6;
+    color: #9a9a9a;
+    font-size: 16px;
+    background-color: #fff;
+}
+#content .order-basket-empty > img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 18px;
+}
+#content .order-guide {
+   text-align: left;
+}
+#content .order-guide h3{
+    margin: 50px 0 0 0;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #1a1a1a;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#content .guide-inner {
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+}
+#content .guide-inner h4 {
+    margin-top: 22px;
+}
+#content .guide-inner ul{
+    margin-top: 15px;
+}
+#content .guide-inner ul li {
+    line-height: 21px;
+    margin-left: 12px;
+    color: #6d6d6d;
+}
+#content .guide-inner ul li::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 3px;
+    height: 3px;
+    margin: 7px 7px 0 -12px;
+    border-radius: 50%;
+    background: #6d6d6d;
+}
+
+/*------------------------------테블릿 버전--------------------------*/
+
+@media screen and (max-width:1200px){
+    #content {
+        padding: 66px 0px 0;
+    }
+    #content .order-title {
+        margin-bottom: 0px;
+    }
+    #content .order-title h2 {
+        line-height: 43px;
+        padding: 0 61px;
+        box-sizing: border-box;
+        color: #2e2e2e;  
+        font-size: 15px;
+    }
+    #content .order-step {
+        display: none;
+    }
+    #content .order-basket {
+        display: block;
+    }
+    #content .order-basket span {
+        display: none;
+    }
+    #content .order-basket ul li {
+        width: 50%;
+        padding: 10px 0px;
+    }
+    #content .pc-basket {display: none;}
+    #content .m-basket {display: block;}
+    #content .order-basket-empty {
+        height: auto;
+        padding: 0 0 ;
+        border-top: none;
+        border-bottom: none;
+    }
+    #content .order-basket-empty p {
+        padding: 30px 0;
+        box-sizing: border-box;
+    }
+    #content .order-basket-empty > img {
+        display: none;
+    }
+    #content .order-guide {
+       display: none;
+    }
+    
+    
+}

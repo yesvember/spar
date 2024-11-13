@@ -1,0 +1,303 @@
+#content {
+    margin: 0 auto;
+    padding: 250px 0 100px 0;
+    box-sizing: border-box;
+}
+#content div:nth-of-type(1) {
+    text-align: center;
+}
+#content div:nth-of-type(1) > h2 {
+    margin-bottom: 50px;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#content .login-wrap {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 25px;
+   box-sizing: border-box;
+}
+#content .login-wrap > div{
+    display: flex;
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: 1px 0px 4px 4px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+} 
+#content .login-wrap > div > div {
+    width: 50%;
+}
+#content .mems-img > img {
+    width: 100%;
+    height: auto;
+}
+#content .mems {
+    width: 100%;
+    padding: 80px 0 0 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#content .mems > div {
+    margin-bottom: 30px;   
+    text-align: center;
+}
+#content .mems > div:nth-of-type(1) {
+    color: #3b3b3b;
+    font-size: 24px;
+}
+#content .mems > div:nth-of-type(1) > a {
+    padding: 0 20px;
+    box-sizing: border-box;
+    letter-spacing: -3px;
+}
+#content .mems-area1 {
+    font-weight: bold;
+}
+#login-area,
+#join-area {
+    max-width: 450px;
+    margin: 0 auto;
+}
+#login-area .login > label {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+#login-area .login > label > input,
+#join-area .join > label > input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #989898;
+}
+#login-area .login > label > input::placeholder,
+#join-area .join > label > input::placeholder {
+    color: lightgray;
+    font-size: 18px;
+    font-weight:500;
+}
+#login-area .login > label > input:focus,
+#join-area .join > label > input:focus {
+    outline: none;
+}
+#login-area .option {
+    display: none;
+    line-height: 43px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+#login-area .option > div {
+    display: flex;
+    justify-content: space-between;
+}
+#login-area .option > div > span:first-of-type {
+    display: flex;
+    align-items: center;
+}
+#login-area .option > div > span:first-of-type > label:last-of-type{
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#login-area .option span:first-of-type input[type="checkbox"]+label{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/bg_checkbox.png)no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}  
+#login-area .option span:first-of-type input[type="checkbox"]:checked+label {
+    background: url(../image/icon/bg_checkbox_checked.png) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+#login-area .option span:last-of-type span {
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+#login-area .option a:first-of-type {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+#login-area .find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+#login-area .find > a {
+    font-size: 14px;
+}
+#login-area .find > a:first-of-type:after{
+    content: "|";
+    display: inline-block;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: lightgray;
+    font-size: 10px;
+}
+#login-area .find > div {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#login-area .find input[type="checkbox"]+label{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(/image/icon/checkbox_on.svg)no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+}
+#login-area .find input[type="checkbox"]:checked+label{
+    background: url(/image/icon/checkbox_on.svg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+}
+#login-area .find > div label {
+    margin-left: 3px;
+    cursor: pointer;
+}
+#login-area .login-btn-area > button,
+#join-area .ok-btn {
+    display: block;
+    width: 100%;
+    padding: 19px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #000;
+    cursor: pointer;
+}
+#login-area .login-btn-area > button:first-of-type {
+    margin-bottom: 15px;
+}
+#login-area .login-btn-area > button:last-of-type {
+    background-color: #bebebe;
+}
+#join-area{
+    display: none;
+    width: 100%;
+}
+#join-area > p {
+    margin-bottom: 30px;
+    color: #8a8a8a;
+    font-size: 14px;
+    text-align: center;
+}
+#join-area .join > label {
+    display: block;
+    width: 100%;
+}
+#join-area .join-btn {
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+/*------------------------------테블릿 버전--------------------------*/
+
+@media screen and (max-width:1200px){
+    #content {
+        padding: 65px 0 0 0;
+    }
+    #content div:nth-of-type(1) > h2 {
+        line-height: 43px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #989898;
+        color: #2e2e2e;
+        font-size: 15px;
+    }
+    #content .login-wrap {
+        width: 100%;
+        padding: 28px 15px 20px 15px;
+     }
+     #content .login-wrap > div{
+        display: block;
+        box-shadow: none;
+        border-radius: 0;
+    } 
+    #content .login-wrap > div > div {
+        width: 100%;
+    }
+    #content .mems-img > img {
+       display: none;
+    }
+    #content .mems {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    #content .mems > div {
+        display: none;
+        margin-bottom: 0; 
+    }
+    #join-area {
+        display: none;
+    }
+    #login-area{
+        max-width: 100%;
+    }
+    #login-area .login > label {
+       display: block;
+       width: 100%;
+       margin: 0 auto;
+       font-size: 18px;
+    }
+    #login-area .login > label > input{
+        padding: 10px;
+        margin-bottom: 7px;
+        border-bottom: none;
+        border: 1px solid lightgray;
+        font-size: 15px;
+    }
+    #login-area .login > label > input::placeholder{
+       font-size: 15px;
+    }
+    #login-area .option {
+        display: block;
+    }
+    #login-area fieldset > div:nth-of-type(3){
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    #login-area .find > div > input{
+        display: none;
+    }
+    #login-area .find > div label {
+        display: none;
+    }
+    #login-area .login-btn-area > button{
+        padding: 12px 0;
+    }
+    #login-area .login-btn-area > button:first-of-type {
+        margin-bottom: 7px;
+    }
+    #login-area .find > div {
+        display: none;
+    }
+    #login-area .find > a:first-of-type {
+        margin-left: 13px;
+    }
+    
+}
+/* media */
+@media screen and (max-width:768px){
+    #login-area .login-btn-area > button{
+        padding: 7px 0;
+    }
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="spar">
+    \<meta name="title" content="spar.com">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link href="css/header_footer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/media_query.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <!-- script -->
+    <script src="./lib/jquery-1.11.1.min.js"></script>
+    <script src="./lib/jquery.easing.1.3.js"></script>
+    <script src="https://kit.fontawesome.com/5a0d19e43a.js" crossorigin="anonymous"></script>
+    <title>spar</title>
+</head>
+
+<body>
+    <!--스킵내비게이션-->
+    <div id="skip">
+        <a href="#header" class="skip__Navigation">전체상품목록 바로가기</a>
+        <a href="#header" class="skip__Navigation">본문 바로가기</a>
+    </div>
+    <!--맨위로 올라가는 버튼-->
+    <div id="btn_Top">
+        <a href="#none"></a>
+    </div>
+    <!--모바일 드롭영역-->
+    <div id="aside">
+        <div class="aside-inner">
+            <div class="aside-logo">
+                <h1>
+                    <a href="#none"></a>
+                </h1>
+            </div>
+
+            <div class="aside-search">
+                <div class="aside-search-inner">
+                    <input type="search" id="keywords" name="keywords">
+                    <button class="btn-search" name="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="aside-menubar">
+                <ul>
+                    <li><a href="#none">주문정보</a></li>
+                    <li><a href="#none">회원가입</a></li>
+                    <li><a href="#none">로그인</a></li>
+                    <li><a href="#none">장바구니</a></li>
+                </ul>
+            </div>
+
+            <div class="aside-menu">
+                <ul>
+                    <li><a href="#none">brand story</a></li>
+                    <li><a href="#none">products</a></li>
+                    <li><a href="#none">service</a></li>
+                    <li><a href="#none">event</a></li>
+                    <li><a href="#none">store</a></li>
+                </ul>
+            </div>
+
+            <div class="aside-customer">
+                <p>customer sercive</p>
+                <p>02-540-2839</p>
+
+                <ul>
+                    <li>이메일 : info@sparkorea.com</li>
+                    <li>팩스 : 02-540-2840</li>
+                    <li>계좌번호 : 기업은행 061-109232-04-019</li>
+                    <li>예금주명 : 주식회사 스파코리아</li>
+                    <li>운영시간 : 09:00 &#45; 18:00 (MON &#45; FRI)</li>
+                    <li>점심시간 : 12:00 &#45; 13:00</li>
+                    <li>(토요일,일요일,공휴일은 휴무입니다.)</li>
+                </ul>
+            </div>
+
+            <div class="aside-close-btn">
+                <a href="#none"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--wrap-->
+    <div id="wrap">
+        <!--header-->
+        <header id="header" class="menuon">
+            <nav>
+                <div class="logo">
+                    <h1>
+                        <a href="./index.html">
+                            <span class="indent"></span>
+                        </a>
+                    </h1>
+                </div>
+                <!--gnb-->
+                <div class="gnb">
+                    <!--header-left-->
+                    <div class="menu_all">
+                        <a href="#none" title="메뉴열기-pc">
+                            <img src="./image/header/menu.png" alt="menu">
+                        </a>
+                        <a href="#none" title="메뉴열기-m">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <!--header middle-->
+                    <div id="menu_box">
+                        <ul class="menu-pc">
+                            <li><a href="./brand.html">brand story</a>
+                                <ul class="submenu-pc">
+                                    <li>
+                                        <a href="./brand.html">브랜드스토리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">products</a>
+                                <ul class="submenu-pc">
+                                    <li>
+                                        <a href="#none">
+                                            <img src="./image/header/submenu-2-1.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <img src="./image/header/submenu-2-2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <img src="./image/header/submenu-2-3.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <img src="./image/header/submenu-2-4.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">service</a>
+                                <ul class="submenu-pc">
+                                    <li><a href="#none">공지사항</a></li>
+                                    <li><a href="#none">a/s접수</a></li>
+                                    <li><a href="#none">상품문의</a></li>
+                                    <li><a href="#none">faq</a></li>
+                                    <li><a href="#none">대리점안내</a></li>
+                                    <li><a href="#none">다운로드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">event</a>
+                                <ul class="submenu-pc">
+                                    <li><a href="#none">이벤트</a></li>
+                                    <li><a href="#none">스파라이프</a></li>
+                                    <li><a href="#none">사용자갤러리</a></li>
+                                    <li><a href="#none">쇼룸안내</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">store</a>
+                                <ul class="submenu-pc">
+                                    <li><a href="#none">테이블믹서</a></li>
+                                    <li><a href="#none">스탠드믹서</a></li>
+                                    <li><a href="#none">도우시터</a></li>
+                                    <li><a href="#none">악세서리</a></li>
+                                    <li><a href="#none">스파굿즈</a></li>
+                                    <li><a href="#none">개인결제창</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--header-right-->
+                    <div class="right_menu">
+                        <div>
+                            <a href="#none" title="search" class="gnb-search">
+                                <img src="./image/header/rt_search.png" alt="search">
+                            </a>
+                            <a href="./login.html" title="user">
+                                <img src="./image/header/rh_user.png" alt="user">
+                            </a>
+                            <a href="./order.html" title="cart">
+                                <img src="./image/header/rh_cart.png" alt="cart">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--풀 메뉴-->
+        <div id="fullmenu">
+            <div>
+                <div class="full_close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="fullmenu-list">
+                    <li><a href="#none" class="fullmenu-list-title">brand story</a>
+                        <ul class="fullmenu_sub">
+                            <li>
+                                <a href="#none">브랜드스토리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none" class="fullmenu-list-title">products</a>
+                        <ul class="fullmenu_sub">
+                            <li>
+                                <a href="#none">테이블믹서 5l</a>
+                            </li>
+                            <li>
+                                <a href="#none">테이블믹서 8l</a>
+                            </li>
+                            <li>
+                                <a href="#none">스탠드믹서</a>
+                            </li>
+                            <li>
+                                <a href="#none">도우시터</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none" class="fullmenu-list-title">service</a>
+                        <ul class="fullmenu_sub">
+                            <li><a href="#none">공지사항</a></li>
+                            <li><a href="#none">a/s접수</a></li>
+                            <li><a href="#none">상품문의</a></li>
+                            <li><a href="#none">faq</a></li>
+                            <li><a href="#none">대리점안내</a></li>
+                            <li><a href="#none">다운로드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none" class="fullmenu-list-title">event</a>
+                        <ul class="fullmenu_sub">
+                            <li><a href="#none">이벤트</a></li>
+                            <li><a href="#none">스파라이프</a></li>
+                            <li><a href="#none">사용자갤러리</a></li>
+                            <li><a href="#none">쇼룸안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none" class="fullmenu-list-title">store</a>
+                        <ul class="fullmenu_sub">
+                            <li><a href="#none">테이블믹서</a></li>
+                            <li><a href="#none">스탠드믹서</a></li>
+                            <li><a href="#none">도우시터</a></li>
+                            <li><a href="#none">악세서리</a></li>
+                            <li><a href="#none">스파굿즈</a></li>
+                            <li><a href="#none">개인결제창</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--검색창-->
+        <div id="search-pc">
+            <div class="title-sch">
+                search
+            </div>
+            <fieldset>
+                <legend>검색</legend>
+                <input type="search" id="keywords" name="keywords">
+                <button class="btn-search" name="search">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </button>
+            </fieldset>
+            <button type="button" class="btn-close">
+                <span>
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div id="content">
+        <div>
+            <h2>login</h2>
+        </div>
+
+        <div class="login-wrap">
+            <div>
+                <div class="mems">
+                    <div>
+                        <a href="#none" class="mems-area1">로그인</a>
+                        <a href="#none" class="mems-area2">비회원 주문조회</a>
+                    </div>
+
+                    <form action="#none" id="login-area">
+                        <fieldset>
+                            <legend class="hide">회원로그인</legend>
+                            <div class="login">
+                                <label class="id" title="아이디">
+                                    <input type="text" placeholder="아이디">
+                                </label>
+                                <label class="password" title="비밀번호">
+                                    <input type="text" placeholder="비밀번호">
+                                </label>
+                            </div>
+                            <div class="option">
+                                <div>
+                                    <span>
+                                        <input type="checkbox" id="keep-login">
+                                        <label for="keep-login"></label>
+                                        <label for="keep-login">로그인 상태 유지</label>
+                                    </span>
+                                    <span>
+                                        <span class="inp-text">ip보안</span>
+                                        <a href="#none" class="off">off</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="find">
+                                    <a href="#none">아이디 찾기</a>
+                                    <a href="#none">비밀번호 찾기</a>
+
+                                    <div>
+                                        <input type="checkbox" name="checkbox" id="checked">
+                                        <label for="checked"></label>
+                                        <label for="checked">보안접속</label>
+
+                                    </div>
+                                </div>
+
+                                <div class="login-btn-area">
+                                    <button type="button" class="login-btn">로그인</button>
+                                    <button type="button">회원가입</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form action="#none" id="join-area">
+                        <p>비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</p>
+                        <fieldset>
+                            <div class="join">
+                                <label class="order-name" title="주문자명">
+                                    <input type="text" placeholder="주문자명">
+                                </label>
+                                <label class="order-id" title="주문번호">
+                                    <input type="text" placeholder="주문번호(하이픈(-) 포함)">
+                                </label>
+                                <label class="order-password" title="비회원주문 비밀번호">
+                                    <input type="text" placeholder="비회원주문 비밀번호">
+                                </label>
+                            </div>
+
+                            <div class="join-btn">
+                                <button type="button" class="ok-btn">확인</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div>
+                <div class="mems-img">
+                    <img src="./image/index/login-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--푸터-->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="ft-lf">
+                <div>
+                    <h3><img src="./image/header/logo_w.png" alt="ft-logo"></h3>
+                </div>
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보 처리 방침</li>
+                    <li>제휴 및 마케팅 문의</li>
+                </ul>
+
+                <div class="ft-lf-info">
+                    법인명(상호) : 주식회사 스파코리아<br class="ft-m-br"><span></span>대표자(성명):도홍선<br class="ft-m-br"><br
+                        class="ft-pc-br">
+                    주소: 서울특별시 강남구 학동로5길 5 (논현동)<br class="ft-m-br"><span></span>사업자등록번호:541-87-00841<br
+                        class="ft-m-br"><br class="ft-pc-br">
+                    통신판매업신고번호:제2022-서울강남-05866호<br class="ft-m-br"><span></span>개인정보 보호책임자:박진후<br class="ft-m-br"><br
+                        class="ft-pc-br">
+                    호스팅제공:카페24(주)<br class="ft-m-br"><br class="ft-pc-br">
+                    <br class="ft-pc-br">
+                    <br class="ft-m-br">
+                    <br class="ft-m-br">
+                    Copyright © 주식회사 스파코리아 All Rights Reserved. <br>
+                    당사의 모든 콘텐츠를 무단 사용, 배포, 복제 등을 할 경우 관련법에 따라 법적 처벌을 받을 수 있습니다.
+                </div>
+            </div>
+            <div class="ft-rt">
+                <div>
+                    <strong>Customer Service</strong>
+                </div>
+                <div class="ft-rt-info">
+                    이메일 : info@sparkorea.com<br class="ft-m-br"><span></span>전화 : 02-540-2839<br
+                        class="ft-m-br"><span></span>팩스 : 02-540-2840<br class="ft-m-br"><br class="ft-pc-br">
+                    계좌번호 : 기업은행 061-109232-04-019<br class="ft-m-br"><span class="slash-none"></span>예금주명 : 주식회사
+                    스파코리아<br class="ft-m-br"><br class="ft-pc-br">
+                    운영시간 : 09:00 - 18:00 (MON - FRI)<br class="ft-m-br"><br class="ft-pc-br">
+                    점심시간 : 12:00 - 13:00 (토요일,일요일,공휴일은 휴무입니다.)
+                </div>
+                <div class="ft-rt-icon">
+                    <div>
+                        <a href="#none">자주 묻는 질문(faq)</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#none"></a>
+                        </li>
+                        <li>
+                            <a href="#none"></a>
+                        </li>
+                        <li>
+                            <a href="#none"></a>
+                        </li>
+                        <li>
+                            <a href="#none"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(".mems-area1").on("click", function () {
+            $(this).css("font-weight", "bold");
+            $(".mems-area2").css("font-weight", "normal");
+            $("#login-area").show();
+            $("#join-area").hide();
+        });
+
+        $(".mems-area2").on("click", function () {
+            $(this).css("font-weight", "bold");
+            $(".mems-area1").css("font-weight", "normal");
+            $("#join-area").show();
+            $("#login-area").hide();
+        });
+
+        let okBtn = document.querySelector(".ok-btn");
+        let loginBtn = document.querySelector(".login-btn");
+        let keepLogin = document.querySelector("#keep-login");
+
+        okBtn.addEventListener("click", () => {
+            alert("주문자명 항목은 필수 입력값입니다");
+        });
+        loginBtn.addEventListener("click", () => {
+            alert("아이디 항목은 필수 입력값입니다.");
+        });
+        keepLogin.addEventListener("click", () => {
+            confirm("로그인 상태를 유지하시겠습니까?" + "<br>" + "타인이 개인정보를 도용할 수 있으니,주의하시기 바랍니다.");
+        });
+    </script>
+
+    <!--script-->
+    <script src="js/header_footer.js" defer></script>
+    <script src="js/Toptn.js" defer></script>
+</body>
+
+</html>

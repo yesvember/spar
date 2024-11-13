@@ -1,0 +1,365 @@
+/*------------------------------PC버전--------------------------*/
+@media screen and (max-width:1920px){
+    html,body{width: 100%;}
+}
+@media screen and (max-width:1400px){
+    
+}
+/*------------------------------테블릿 버전--------------------------*/
+
+@media screen and (max-width:1200px){ 
+   #btn_Top {
+       display: none;
+    }
+    #aside {
+        display:block;
+    }
+   
+    #header {
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
+    /*logo*/
+    #header nav > .logo {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0px 0;
+        z-index: 4;
+    }
+    #header nav > .logo > h1 > a {
+        display: block;
+        width: 50.2px;
+        height: 22px;
+    }
+    #header nav > .logo > h1 > a > span {
+        display: block;
+        width: 50.2px;
+        height: 22px;
+        background: url("../image/header/main_logo-m.png")center center no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    div.gnb {
+        padding: 0 0px 0px 0px;
+    }
+    /*berger*/
+    div.gnb > .menu_all {
+       width: 5%;
+    }
+    .menu_all > a:nth-of-type(1){
+        display: none;
+    }
+    .menu_all > a:nth-of-type(2){
+        display: block;
+    }
+    /*user*/
+    #menu_box {
+        display: none;
+    }
+    .right_menu {
+        width: 5%;
+    }
+    .right_menu > div {
+        justify-content: flex-end;
+        margin: inherit;
+    }
+    .right_menu > div a:nth-of-type(-n+2){
+        display: none;
+    }
+    #fullmenu,
+    div#search-pc  {
+        display: none;
+    }
+    /*visual*/
+    #visual {
+        padding-top: 60px;
+    }
+    #visual .swiper-slide--1{
+        background: url('../image/index/visual1-m.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    #visual .swiper-slide--2{
+        background: url('../image/index/visual2-m.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    #visual .swiper-slide--3{
+        background: url('../image/index/visual3-m.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    #visual .swiper-slide--4{
+        background: url('../image/index/visual4-m.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    #visual .swiper-slide--5{
+        background: url('../image/index/visual5-m.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .swiper-slide > div > p {
+        display: none;
+    }
+    .textarea-m {
+        top: 22%;
+        font-size: 34px;
+        font-weight: 800;
+    }
+    .textarea-m {
+        display: block;
+    }
+    .swiper-button-next{
+        display: none;
+        visibility: hidden;
+    }
+    .swiper-button-prev{
+        display: none;
+        visibility: hidden;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+        visibility: hidden;
+    }
+    /*section1*/
+    .section-inner {
+    margin: 50px 70px;
+    }
+    #section1 .cont {
+        display: block;
+        padding-left: 0px;
+        margin-bottom: 48px;
+    }
+    #section1 .cont > div:nth-of-type(1){
+        margin-bottom: 20px;
+    }
+    #section1 .cont > div:nth-of-type(1) span {
+        font-size: 40px !important;
+    }
+    #section1 .cont > div:nth-of-type(2) {
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    #section1 .cont > div > h3 {
+        line-height: 28px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    #section1 .cont > div > span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #section1 .cont > div > span br {
+        display: none;
+    }
+    #section1 .banner {
+        display: block;
+    }
+    #section1 .banner > div{
+        position: relative;
+        width: 100%;
+        height: 46vh;
+        margin-bottom: 60px;
+    }
+    #section1 .banner > div:nth-of-type(1){
+        background: url(../image/index/section1-1-m.png)center center no-repeat;
+        background-size: cover;
+    }
+    #section1 .banner > div:nth-of-type(2){
+        background: url(../image/index/section1-2-m.png)center center no-repeat;
+        background-size: cover;
+    }
+    #section1 .banner > div:nth-of-type(3){
+        background: url(../image/index/section1-3-m.png)center center no-repeat;
+        background-size: cover;
+    }
+    #section1 .banner > div::before{
+        display: block;
+    }
+    #section1 button {
+        line-height: 40px;
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+    /*section2*/
+    #section2 {
+        height: 80vh;
+    }
+    #section2 > div {
+        margin-bottom: 0px;
+        background: url(../image/index/section2-m.jpg)center  no-repeat;
+        background-size: cover;
+    }
+    #section2 .cont2 {
+        left: 2%;
+    } 
+    #section2 .cont2 br {
+        display: block;
+    }
+    #section2 .cont2 h3 {
+        font-size: 16px;
+    }
+    #section2 .cont2 strong {
+        line-height: 40px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    #section2 .cont2 > div > a {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    /*section3*/
+    #section3 {
+        height: 80vh;
+    }
+    #section3 > div {
+        background: url(../image/index/section3-m.jpg)center no-repeat;
+        background-size: cover;
+    }
+    #section3 .cont3 {
+        left: 2%;
+    } 
+    #section3 .cont3 h3 {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    #section3 .cont3 strong {
+        line-height: 40px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    #section3 .cont3 p{
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    #section3 .cont3 p br{
+        display: none;
+    }     
+    /*section4*/
+    #section4 {
+        padding: 100px 70px 45px 70px;
+    }
+    #section4 .cont4 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    #section4 ul {
+        flex-wrap: wrap;
+        height: 457.2px;
+    }
+    #section4 ul > li {
+        width: 46%;
+        padding: 30px 0;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    #section4 ul > li > img {
+        padding-bottom: 35px;
+    }
+    #section4 ul > li:nth-of-type(2) > img{
+        padding-bottom: 17px !important;
+    }
+    #section4 ul > li:nth-of-type(3) > img{
+        padding-right: 15px;
+        padding-bottom: 39px !important;
+    }
+    /*푸터-----------------------------------------------------------*/
+    #footer {
+        height: auto;
+        padding: 0 0px;
+    }
+    #footer .footer-inner {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 0 60px 0;
+    }
+    #footer .footer-inner > div {
+        width: 100%;
+    }
+    #footer .footer-inner > div > ul {
+        font-size: 12px;
+    }
+    #footer .ft-lf-info,
+    #footer .ft-rt-info  {
+        font-size: 12px;
+    }
+    #footer .ft-lf-info > span::after,
+    #footer .ft-rt-info > span::after {
+        display: none;
+        content: "";
+    }
+    #footer .ft-rt strong {
+        margin: 20px 0 15px 0;
+        font-size: 24px;
+    }
+    #footer .ft-rt-icon {
+        display: block;
+    }
+    #footer .ft-rt-icon > div {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-size: 14px; 
+    }
+    #footer .ft-rt-icon > ul {
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        text-align: left;
+    }
+    #footer .ft-rt-icon > ul li {
+        display: inline-block;
+        width: 25%;
+        margin-right: 5px;
+    }
+    footer .ft-rt-icon > ul li a {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .ft-m-br {
+        display: block;
+    }
+    .ft-pc-br {
+        display: none;
+    }
+}
+
+/*------------------------------모바일 버전--------------------------*/
+
+@media screen and (max-width:600px){ 
+    /*section1*/
+    .section-inner {
+        margin: 50px 30px;
+    }
+    /*section2*/
+    #section2 {
+        margin-bottom: 20px;
+    }
+     /*section4*/
+
+    #section4 > div {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+     #section4 {
+        padding: 100px 0px 20px 0px;
+    }
+
+    #section4 ul > li > img {
+        width: 75px;
+    }
+    #section4 ul > li:nth-of-type(2) > img {
+        width: 50px;
+        padding-bottom: 22px !important;
+    }
+    #footer .footer-inner {
+        padding: 20px 0 60px 0;
+    }
+}
